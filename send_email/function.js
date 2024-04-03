@@ -26,7 +26,7 @@ const mg = mailgun({
 const sendEmail = async (firstName, lastName, email, uuid) => {
   const text = `
     Hey ${firstName} ${lastName},
-    This is your verification link http://www.jainammehta.website:8080/v1/users/verification?token=${uuid}
+    This is your verification link https://jainammehta.website/v1/users/verification?token=${uuid}
   `;
 
   const data = {
